@@ -1,0 +1,25 @@
+{
+  "name": "aws-node-express-api-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "deploy": "serverless deploy",
+    "remove": "serverless remove",
+    "dev": "serverless offline",
+    "dynamo:install": "serverless dynamodb install",
+    "dynamo:start": "serverless dynamodb start"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.72.0",
+    "@vendia/serverless-express": "^4.8.0",
+    "body-parser": "^1.20.0",
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.94",
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-offline": "^8.7.0"
+  }
+}
